@@ -5,7 +5,8 @@ Here you will find functions in Python, R and Matlab for computing the equilibri
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ## Gases included thus far:
-1. Methane (CH4):  Python, R
+1. Argon (Ar):  Python, R, Matlab
+3. Methane (CH4):  Python, R
 2. Sulfur Hexafluoride (SF6): 
 
 **Bold** and _Italic_ and `Code` text
