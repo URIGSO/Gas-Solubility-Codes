@@ -5,21 +5,22 @@ Here you will find functions in Python, R and Matlab for computing the equilibri
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ## Gases included thus far:
-1. Argon (Ar):  Python, R, Matlab
+1. Argon (Ar):  Python, R
 3. Methane (CH4):  Python, R
-2. Sulfur Hexafluoride (SF6): 
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/URIGSO/Gas-Solubility-Codes/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+3. Sulfur Hexafluoride (SF6): Python, R
+4. Oxygen (O2): Python, R
+5. Helium (He): Python
+6. Nitrous Oxide (N2O): Python
+7. Nitrogen (N2): Python
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Please contact bloose@uri.edu with an issues.
+
+Contributors to this project include:
+
+1. Sam Gartzman (URL)
+2. Monique LeFrance (URL)
+3. Kris Krasnosky (URL)
+4. Scott Hara (URL)
+5. Christiane Uhlig [URL](https://www.awi.de/en/about-us/organisation/staff/christiane-uhlig.html)
