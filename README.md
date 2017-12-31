@@ -1,25 +1,12 @@
-## Welcome to GitHub Pages
+## Gas-Solubility-Codes
 
-You can use the [editor on GitHub](https://github.com/URIGSO/Gas-Solubility-Codes/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Here you will find functions in Python, R and Matlab for computing the equilibrium solubility of gases in water and seawater. The references for each empirical solubility function are found in the header of the code.   The solubility of noble gases He, Ne, Ar, Kr, and Xe were ported from [Roberta Hamme's Matlab functions](https://web.uvic.ca/~rhamme/download.html) for the same gases.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
+## Gases included thus far:
+1. Methane (CH4):  Python, R
+2. Sulfur Hexafluoride (SF6): 
 
 **Bold** and _Italic_ and `Code` text
 
