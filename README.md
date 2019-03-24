@@ -5,26 +5,32 @@ Here you will find functions in Python, R and Matlab for computing the equilibri
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ## Gases included thus far:
-1. Helium (He): Matlab, Python
+1. Helium (He): Matlab, Python, R
 2. Neon (Ne): Matlab, R
 3. Argon (Ar):  Matlab, Python, R
-4. Krypton (Kr): Matlab
+4. Krypton (Kr): Matlab, R
 5. Xenon (Xe): Matlab
-6. Radon (Rn): Matlab
-7. Nitrogen (N2): Matlab, Python
+6. Radon (Rn): Matlab, R
+7. Nitrogen (N2): Matlab, Python, R
 8. Oxygen (O2): Matlab, Python, R
-9. Carbon dioxide (CO2): Matlab
+9. Carbon dioxide (CO2): Matlab, Python, R
 10. Methane (CH4):  Python, Python, R
 11. Sulfur Hexafluoride (SF6): Matlab, Python, R
 12. Carbon tetrachloride (CCl4): Matlab, 
-13. Trichlorofluoromethane (CFC-11): Matlab,
-14. Dichlorodifluoromethane (CFC-12): Matlab, Python
+13. Trichlorofluoromethane (CFC-11): Matlab,Python, R
+14. Dichlorodifluoromethane (CFC-12): Matlab, Python, R
 15. 1,1,2-Trichloro-1,2,2-trifluoroethane (CFC-113): Matlab 
-16. Nitrous Oxide (N2O): Matlab, Python
+16. Nitrous Oxide (N2O): Matlab, Python, R
 17. Anthracene (C4H10): Python 
-18. Mercury (Hg0): Matlab
-19. Ethylene (C2H4): Matlab 
-20. Carbon Monoxide (CO): Matlab
+18. Mercury (Hg0): Matlab,
+19. Ethylene (C2H4): Matlab, 
+20. Carbon Monoxide (CO): Matlab,
+21. HCFC-22 solubility: Matlab,
+22. HCFC-141b solubility: Matlab,
+23. HCFC-142b solubility: Matlab,
+24. HFC-134a solubility
+25. HFC-23 solubility
+26. SO2 Solubility: Matlab,
 
 ### Support or Contact
 
@@ -45,3 +51,4 @@ Contributors to this project include:
 11. Jacob Strock (URL)
 12. Emma Thomas (URL)
 13. Nicole Flecchia (URL)
+14. Nina Santos (URL)
