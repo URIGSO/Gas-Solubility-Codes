@@ -14,17 +14,17 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 7. Nitrogen (N2): Matlab, Python
 8. Oxygen (O2): Matlab, Python, R
 9. Carbon dioxide (CO2): Matlab
-10.Methane (CH4):  Python, Python, R
-11.Sulfur Hexafluoride (SF6): Matlab, Python, R
-12.Carbon tetrachloride (CCl4): Matlab, 
-13.Trichlorofluoromethane (CFC-11): Matlab,
-14.Dichlorodifluoromethane (CFC-12): Matlab, Python
-15.1,1,2-Trichloro-1,2,2-trifluoroethane (CFC-113): Matlab 
-16.Nitrous Oxide (N2O): Matlab, Python
-17.Anthracene (C4H10): Python 
-18.Mercury (Hg0): Matlab
-19.Ethylene (C2H4): Matlab 
-20.Carbon Monoxide (CO): Matlab
+10. Methane (CH4):  Python, Python, R
+11. Sulfur Hexafluoride (SF6): Matlab, Python, R
+12. Carbon tetrachloride (CCl4): Matlab, 
+13. Trichlorofluoromethane (CFC-11): Matlab,
+14. Dichlorodifluoromethane (CFC-12): Matlab, Python
+15. 1,1,2-Trichloro-1,2,2-trifluoroethane (CFC-113): Matlab 
+16. Nitrous Oxide (N2O): Matlab, Python
+17. Anthracene (C4H10): Python 
+18. Mercury (Hg0): Matlab
+19. Ethylene (C2H4): Matlab 
+20. Carbon Monoxide (CO): Matlab
 
 ### Support or Contact
 
@@ -41,7 +41,7 @@ Contributors to this project include:
 7. Melanie Feen (URL) 
 8. Grace Medley (URL) 
 9. Lisa de Pace (URL)
-10.Victoria Fulfer (URL)
-11.Jacob Strock (URL)
-12.Emma Thomas (URL)
-13.Nicole Flecchia (URL)
+10. Victoria Fulfer (URL)
+11. Jacob Strock (URL)
+12. Emma Thomas (URL)
+13. Nicole Flecchia (URL)
