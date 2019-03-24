@@ -52,3 +52,20 @@ Contributors to this project include:
 12. Emma Thomas (URL)
 13. Nicole Flecchia (URL)
 14. Nina Santos (URL)
+15. Kayla	Kurtz (URL)
+16. Peter	Melanson (URL)
+17. Matt	Dunn
+18. Jessica	Carney
+19. Angela	Stahl
+20. Sara	Shapiro
+21. Catrina	Nowakowski
+22. Kyle	Turner
+23. Maggie	Heinichen
+24. Ian	Bishop
+25. Diana	Fontaine
+26. Michelle	Hauer
+27. Samantha	Setta
+28. Maya	Morales-McDevitt
+Nina	Santos
+Samuel	Katz
+Xiaozhuo	Wei
