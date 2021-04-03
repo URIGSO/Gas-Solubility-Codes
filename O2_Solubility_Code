@@ -1,0 +1,47 @@
+##solubility for O2
+##2/16/2017
+##Corinne Truesdale
+##adapted from Christiane Uhlig's code for methane in seawater
+
+# O2_solubility_Code   
+
+#=========================================================================
+# - Calculate solubility (Bunsen Coefficient) of dissolved oxygen in sea water.
+# Inputs: 
+#   T: temperature in degress celsius
+#   S: salinity in PSU
+#	# Output:
+# bunsen.coeff: bunsen coefficient at given T and S in vol/vol
+#
+#
+#- SOURCE:  Yamamoto, S. et al. (1976) Solubility of Methane in Distilled 
+#- Water and Seawater, Journal of Chemical Engineering Data, Vol. 21(1).
+# DISCLAIMER:
+#    This software is provided "as is" without warranty of any kind.  
+#==========================================================================
+
+bunsen <- function(T, S){
+  
+  A0 <- 5.80871
+  A1 <- 3.20291
+  A2 <- 4.17887
+  A3<-5.10006
+  A4<- -9.86643e-2
+  A5<-3.80369
+  B0 <- -7.01577e-3
+  B1 <- -7.70028e-3
+  B2 <- -1.13864e-2
+  B3<- -9.51519e-3
+  C<- -2.75915e-7
+  
+  T.K <- log((298.15-T)/(T + 273.15))
+  
+  bunsen.coeff.L.L.x <- exp((A0 + A1*T.K + A2*(T.K^2)+A3*(T.K^3)+A4*(T.K^4)+A5*(T.K^5)) + S*(B0 +B1*(T.K)+ B2*(T.K)^2 + B3*(T.K^3))+C*S)
+  
+  bunsen.coeff.L.L <- c(bunsen.coeff.L.L.x)
+  
+  return(bunsen.coeff.L.L)
+}
+
+bunsen.coeff <- bunsen(T,S)
+bunsen.coeff
