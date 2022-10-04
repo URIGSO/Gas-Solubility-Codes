@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 """
     Gas Solubility Package for Python
-        Version 1.0 Feb 16, 2016
+        Version 2.0 October, 2022
         Author:  Brice Loose, Graduate School of Oceanography, URI.
         Email: bloose@uri.edu
 
-    Many of the functions included here were ported from Roberta Hamme's
-    Matlab Solubility functions. Roberta Hamme (rhamme@uvic.ca)
+    These noble gas solubility functions are being updated to reflect the new
+    solubility determinations for He, Ne, Ar, Kr, and Xe from 
+    Jenkins et al., (2019).  These replace the prio relationships developed by
+    Roberta Hamme.
     
     #=========================================================================
     # Hesol   Solubility of He in sea water
     #=========================================================================
-    # Hesol Version 1.0 4/4/2005
-    #          Author: Roberta C. Hamme (Scripps Inst of Oceanography)
     #
     # USAGE:  concHe = Hesol(S,T)
     #
@@ -27,12 +27,13 @@
     # OUTPUT:
     #   concHe = solubility of He  [umol/kg] 
     # 
-    # AUTHOR:  Roberta Hamme (rhamme@ucsd.edu)
+    # AUTHOR:  Brice Loose
     #
     # REFERENCE:
-    #    Ray F. Weiss (1971)
-    #       "Solubility of Helium and Neon in Water and Seawater"
-    #       Journal of Chemical and Engineering Data, 16(2), 235-241.
+    #    Jenkins, W., Lott, D.E., Cahill, K.L. (2019) A determination of 
+    # atmospheric helium, neon, argon, krypton, and xenon solubility 
+    # concentrations in water and seawater.  Marine Chemistry,
+    # DOI: https://doi.org/10.1016/j.marchem.2019.03.007
     #
     # DISCLAIMER:
     #    This software is provided "as is" without warranty of any kind.  
@@ -63,7 +64,7 @@ def Hesol(S, T):
 
     # Check that T&S have the same shape or are singular
     if (ms != mt) or (ns != nt):
-        print "Hesol: S & T must have same dimensions or be singular"
+        print ("Hesol: S & T must have same dimensions or be singular")
         return
 
     #------
@@ -71,23 +72,25 @@ def Hesol(S, T):
     #------
 
     # convert T to scaled temperature
-    temp_abs = np.add(T,273.15)
+    temp_abs = np.add(T,273.15)/100
 
-    A1_helium = -167.2178
-    A2_helium = 216.3442
-    A3_helium = 139.2032
-    A4_helium = -22.6202
-    B1_helium = -0.044781
-    B2_helium = 0.023541
-    B3_helium = -0.0034266
+    A1 = -178.1424
+    A2 = 217.5991
+    A3 = 140.7506
+    A4 = -23.01954
+    B1 = -0.038129
+    B2 = 0.019190
+    B3 = -0.0026898
+    C1 = -2.55e-6
 
     # Eqn (2) of Weiss and Kyser
-    conc_He = np.exp(A1_helium + (A2_helium * 100. / temp_abs) + (A3_helium * np.log(temp_abs / 100)) + (A4_helium * temp_abs / 100) + S*(B1_helium + (B2_helium * temp_abs / 100) + (B3_helium * np.power((temp_abs/ 100),2))))
+    conc_He = np.exp(A1 + (A2 / temp_abs) +
+                     (A3 * np.log(temp_abs)) + 
+                     (A4 * temp_abs) + S*(B1 +
+                    (B2 * temp_abs) + 
+                    (B3 * np.power(temp_abs,2))) + C1*S**2)
 
-    # Convert concentration from mL/kg to umol/kg
-    # Molar volume at STP is calculated from Dymond and Smith (1980) "The virial coefficients of pure gases and mixtures", Clarendon Press, Oxford.
-    conc_He = conc_He / 22.44257e-3
-
-    return conc_He
+    
+    return conc_He*1e6  # OUTPUT IN umol/kg
 
     

@@ -11,13 +11,13 @@
     Roberta Hamme.
     
     #=========================================================================
-    # Hesol   Solubility of Ar in sea water
+    # Hesol   Solubility of Kr in sea water
     #=========================================================================
     #
-    # USAGE:  concNe = Arsol(S,T)
+    # USAGE:  concNe = Krsol(S,T)
     #
     # DESCRIPTION:
-    #    Solubility (saturation) of argon (Ar) in sea water 
+    #    Solubility (saturation) of Krypton (Kr) in sea water 
     #    at 1-atm pressure of air including saturated water vapor
     #
     # INPUT:  (if S and T are not singular they must have same dimensions)
@@ -25,7 +25,7 @@
     #   T = temperature [degree C]
     #
     # OUTPUT:
-    #   concHe = solubility of Ar  [umol/kg] 
+    #   concHe = solubility of Kr  [umol/kg] 
     # 
     #
     # REFERENCE:
@@ -40,7 +40,7 @@
 """
 
 
-def Arsol(S, T):
+def Krsol(S, T):
 
     import numpy as np
 
@@ -63,7 +63,7 @@ def Arsol(S, T):
 
     # Check that T&S have the same shape or are singular
     if (ms != mt) or (ns != nt):
-        print ("Arsol: S & T must have same dimensions or be singular")
+        print ("Krsol: S & T must have same dimensions or be singular")
         return
 
     #------
@@ -73,23 +73,23 @@ def Arsol(S, T):
     # convert T to scaled temperature
     temp_abs = np.add(T,273.15)/100
 
-    A1 = -227.4607
-    A2 = 305.4347
-    A3 = 180.5278
-    A4 = -27.99450
-    B1 = -0.066942
-    B2 = 0.037201
-    B3 = -0.0056364
-    C1 = -5.30e-6
+    A1 = -122.4694
+    A2 = 153.5654
+    A3 = 70.1969
+    A4 = -8.52524
+    B1 = -0.049522
+    B2 = 0.024434
+    B3 = -0.0033968
+    C1 = 4.19e-6
 
     # Eqn (2) of Weiss and Kyser
-    conc_Ar = np.exp(A1 + (A2 / temp_abs) +
+    conc_Kr = np.exp(A1 + (A2 / temp_abs) +
                      (A3 * np.log(temp_abs)) + 
                      (A4 * temp_abs) + S*(B1 +
                     (B2 * temp_abs) + 
                     (B3 * np.power(temp_abs,2))) + C1*S**2)
 
     
-    return conc_Ar*1e6  # OUTPUT IN umol/kg
+    return conc_Kr*1e6  # OUTPUT IN umol/kg
 
     

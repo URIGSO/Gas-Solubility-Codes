@@ -11,13 +11,13 @@
     Roberta Hamme.
     
     #=========================================================================
-    # Hesol   Solubility of Ar in sea water
+    # Hesol   Solubility of Kr in sea water
     #=========================================================================
     #
-    # USAGE:  concNe = Arsol(S,T)
+    # USAGE:  concNe = Xesol(S,T)
     #
     # DESCRIPTION:
-    #    Solubility (saturation) of argon (Ar) in sea water 
+    #    Solubility (saturation) of Xenon (Xe) in sea water 
     #    at 1-atm pressure of air including saturated water vapor
     #
     # INPUT:  (if S and T are not singular they must have same dimensions)
@@ -25,7 +25,7 @@
     #   T = temperature [degree C]
     #
     # OUTPUT:
-    #   concHe = solubility of Ar  [umol/kg] 
+    #   concHe = solubility of Xe  [umol/kg] 
     # 
     #
     # REFERENCE:
@@ -40,7 +40,7 @@
 """
 
 
-def Arsol(S, T):
+def Xesol(S, T):
 
     import numpy as np
 
@@ -63,7 +63,7 @@ def Arsol(S, T):
 
     # Check that T&S have the same shape or are singular
     if (ms != mt) or (ns != nt):
-        print ("Arsol: S & T must have same dimensions or be singular")
+        print ("Xesol: S & T must have same dimensions or be singular")
         return
 
     #------
@@ -73,23 +73,23 @@ def Arsol(S, T):
     # convert T to scaled temperature
     temp_abs = np.add(T,273.15)/100
 
-    A1 = -227.4607
-    A2 = 305.4347
-    A3 = 180.5278
-    A4 = -27.99450
-    B1 = -0.066942
-    B2 = 0.037201
-    B3 = -0.0056364
-    C1 = -5.30e-6
+    A1 = -224.5100
+    A2 = 292.8234
+    A3 = 157.6127
+    A4 = -22.66895
+    B1 = -0.084915
+    B2 = 0.047996
+    B3 = -0.0073595
+    C1 = 6.69e-6
 
     # Eqn (2) of Weiss and Kyser
-    conc_Ar = np.exp(A1 + (A2 / temp_abs) +
+    conc_Xe = np.exp(A1 + (A2 / temp_abs) +
                      (A3 * np.log(temp_abs)) + 
                      (A4 * temp_abs) + S*(B1 +
                     (B2 * temp_abs) + 
                     (B3 * np.power(temp_abs,2))) + C1*S**2)
 
     
-    return conc_Ar*1e6  # OUTPUT IN umol/kg
+    return conc_Xe*1e6  # OUTPUT IN umol/kg
 
     
