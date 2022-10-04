@@ -6,10 +6,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ## Gases included thus far:
 1. Helium (He): Matlab, Python, R
-2. Neon (Ne): Matlab, R
+2. Neon (Ne): Matlab, R, Python
 3. Argon (Ar):  Matlab, Python, R
-4. Krypton (Kr): Matlab, R
-5. Xenon (Xe): Matlab
+4. Krypton (Kr): Matlab, R, Python
+5. Xenon (Xe): Matlab, Python
 6. Radon (Rn): Matlab, R
 7. Nitrogen (N2): Matlab, Python, R
 8. Oxygen (O2): Matlab, Python, R
