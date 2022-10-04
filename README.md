@@ -4,6 +4,9 @@ Here you will find functions in Python, R and Matlab for computing the equilibri
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+## Installation:
+Navigate to the upper left dropdown menu that says 'master' and choose the branch that you want to download, which corresponds to either Matlab_codes, Python_codes, or R_code.  Once you have chosen the branch you want, click on the Code button to download the code bundle. The unzipped files need to be on your path for e.g. Matlab, Python or R.
+
 ## Gases included thus far:
 1. Helium (He): Matlab, Python, R
 2. Neon (Ne): Matlab, R, Python
