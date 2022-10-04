@@ -1,6 +1,6 @@
 ## Gas-Solubility-Codes
 
-Here you will find functions in Python, R and Matlab for computing the equilibrium solubility of gases in water and seawater. The references for each empirical solubility function are found in the header of the code.   The solubility of noble gases He, Ne, Ar, Kr, and Xe were ported from [Roberta Hamme's Matlab functions](https://web.uvic.ca/~rhamme/download.html) for the same gases.
+Here you will find functions in Python, R and Matlab for computing the equilibrium solubility of gases in water and seawater. The references for each empirical solubility function are found in the header of the code.   The solubility of noble gases He, Ne, Ar, Kr, and Xe have been updated in 2022 to use the Jenkins et al., (2019) Marine Chemistry code DOI:10.1016/j.marchem.2019.03.007.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
