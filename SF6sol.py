@@ -59,7 +59,7 @@ def SF6sol(S, T):
 
     # Check that T&S have the same shape or are singular
     if (ms != mt) or (ns != nt):
-        print "SF6sol: S & T must have same dimensions or be singular"
+        print ("SF6sol: S & T must have same dimensions or be singular")
         return
 
     #------
